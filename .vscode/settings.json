@@ -1,0 +1,22 @@
+{
+    "java.import.maven.enabled": false,
+    "java.import.maven.offline.enabled": true,
+    "java.import.gradle.offline.enabled": true,
+    "java.maven.downloadSources": true,
+    "java.project.sourcePaths": [
+        "j"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "j/apache-commons.jar/apache-commons.jar",
+        "j/opencsv-5.7.1.jar",
+        "c:\\Users\\anish\\OneDrive - UBC\\Documents\\2022W-Y3\\Term 1\\cosc 310\\COSC-310-Project_Anisha\\j\\opencsv-5.7.1.jar",
+        "c:\\Users\\anish\\OneDrive - UBC\\Documents\\2022W-Y3\\Term 1\\cosc 310\\COSC-310-Project_Anisha\\j\\apache-commons.jar\\apache-commons.jar",
+        "j/commons-lang3-3.12.0-bin/commons-lang3-3.12.0/commons-lang3-3.12.0.jar",
+        "j/commons-lang3-3.12.0-bin/commons-lang3-3.12.0/commons-lang3-3.12.0-javadoc.jar",
+        "j/commons-lang3-3.12.0-bin/commons-lang3-3.12.0/commons-lang3-3.12.0-sources.jar",
+        "j/commons-lang3-3.12.0-bin/commons-lang3-3.12.0/commons-lang3-3.12.0-tests.jar",
+        "j/commons-lang3-3.12.0-bin/commons-lang3-3.12.0/commons-lang3-3.12.0-test-sources.jar",
+        "c:\\Users\\anish\\OneDrive - UBC\\Documents\\2022W-Y3\\Term 1\\cosc 310\\COSC-310-Project_Anisha\\j\\commons-lang3-3.12.0-bin\\commons-lang3-3.12.0\\commons-lang3-3.12.0.jar"
+    ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="NFCScanner/app/src/androidTest/java"/>
+	<classpathentry kind="src" path="NFCScanner/app/src/main/java"/>
+	<classpathentry kind="src" path="NFCScanner/app/src/test/java"/>
+	<classpathentry kind="lib" path="NFCScanner/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="project_demo/code/opencsv-5.7.1.jar"/>
+	<classpathentry kind="lib" path="project_demo/libraries/opencsv-5.7.1.jar"/>
+	<classpathentry kind="lib" path="j\commons-lang3-3.12.0-src\commons-lang3-3.12.0-src\src\test\java\org\apache\commons\lang3"/>
+	<classpathentry excluding="NFCScanner/app/src/androidTest/java/|NFCScanner/app/src/main/java/|NFCScanner/app/src/test/java/" kind="src" path=""/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
