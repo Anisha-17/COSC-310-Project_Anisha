@@ -6,10 +6,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.*;
 
-// import apache.commons.lang3.Objects;
 
 import com.opencsv.CSVReader;
 
+//
 public class test{
 
     public static void main (String [] args) {
@@ -22,7 +22,13 @@ public class test{
         try  
         {
             CSVReader r = new CSVReader(new FileReader(fp));
+            //jdbc con = new jdbc();
             Connection con = DriverManager.getConnection(url, user, pass);
+            String create = "CREATE TABLE data (roleName VARCHAR (15), door VARCHAR (10), status VARCHAR (10), d VARCHAR (20))";
+            PreparedStatement c = con.prepareStatement(create);
+            c.execute();
+
+
 
             String sql = "INSERT INTO data VALUES (?, ?, ?, ?)";
             PreparedStatement p = con.prepareStatement(sql);
@@ -63,4 +69,4 @@ public class test{
     //testing
     
     
-}
+} 
