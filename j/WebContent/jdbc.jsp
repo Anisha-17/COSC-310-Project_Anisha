@@ -26,6 +26,22 @@
 		con = DriverManager.getConnection(url, uid, pw);
 	}
    
+<<<<<<< HEAD
+=======
+public void getConnectionForOrders() throws SQLException 
+	{
+		try
+		{	// Load driver class
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		}
+		catch (java.lang.ClassNotFoundException e)
+		{
+			throw new SQLException("ClassNotFoundException: " +e);
+		}
+	
+		con = DriverManager.getConnection(urlOrders, uid, pw);
+	}
+>>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1
 
 	public void closeConnection() throws SQLException 
 	{

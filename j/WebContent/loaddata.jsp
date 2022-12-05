@@ -51,7 +51,10 @@ try
     scanner.close();
     
     out.print("<br><br><h1>Database loaded.</h1>");
+<<<<<<< HEAD
 
+=======
+>>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1
 }
 catch (Exception e)
 {

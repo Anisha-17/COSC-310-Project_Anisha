@@ -17,7 +17,11 @@
 	if(authenticatedUser != null)
 		response.sendRedirect("index.jsp");		// Successful login
 	else
+<<<<<<< HEAD
 		response.sendRedirect("logs.jsp");		// Failed login - redirect back to login page with a message  --%>
+=======
+		response.sendRedirect("login.jsp");		// Failed login - redirect back to login page with a message  --%>
+>>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1
 %>
 
 
@@ -39,7 +43,11 @@
 		try 
 		{
 
+<<<<<<< HEAD
 			getConnection();
+=======
+			getConnectionForOrders();
+>>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1
 			// TODO: Check if userId and password match some customer account. If so, set retStr to be the username.
 			String q = "SELECT username, password FROM account WHERE userid = ? AND password = ?";
 			PreparedStatement p = con.prepareStatement(q);
