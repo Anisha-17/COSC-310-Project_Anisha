@@ -23,10 +23,14 @@ The project_demo was made using Processing 4.0.1. It should also run with earlie
 
 To implement the NFCScanner, download the latest version of android studio, clone the current main branch repository, and open the NFCScanner application using android studio. You may either run the application in the android studio IDE connected to a physical android device, or build an APK through android studio, install onto a physical android device, and run the app locally. To use the app, first rerad through the tutorial describing each state of the system depending on how your NFC card is processed, and then on the following activity screen, enter the local IPV4 address of your device running the processing app and press done. Next, select the room you are attempting to access, and then scan the appropriate NFC card onto the back of the device. Once the first NFC card is scanned, the NFCScanner app will automatically open a java socket client to send the NFC card data, aswell as the door selected to enter and whether or not the access attempt was succesfull or not to the processing java socket server.
 
+Regarding the Features added, you will need docker desktop to be running in the background. In addition, before being able to use the feature, in the visual studio code terminal with the folder 'j' open, you will have to type "docker compose up -d". This will take a second to run, once completed you are welcome to go into a web browser and type in "localhost/shop/login.jsp" to begin. To be able to log in to the server, you will be able to find faux usernames and passwords created in the insert statements in either ddl file.
+
 - NOTE: Should you choose to test the NFCScanner app, NFC DATA FOR EACH CARD IS WITHIN 'strings.xml' INSIDE THE PROJECT FOLDER AT THE FOLLOWING DIRECTORY, WRITE EACH INDIVIDUAL ITEM IN ARRAY "rooms" TO SEPERATE NFC CARDS.
 -  .\NFCScanner\app\res\values\strings.xml
 
 - NOTE: As NFC scanning capabilities are essential to the NFCScanner app, the android studio app is required to be run on a physical device with an NFC scanner enabled. Failure to do so will result in the app waiting at its initial "ACCESS PENDING" state with no ability to grant or deny access, or be able to open the java socket client to communicate with the processing java socket server.
+
+
 
 # List of features
 
@@ -57,4 +61,8 @@ To implement the NFCScanner, download the latest version of android studio, clon
    - 
    ![Snippet of database logging](/Assets/Images/floor-layout-all-closed.jpg)
    ![Snippet of database logging](/Assets/Images/floor-layout-fire.jpg)
+   
+   # Features added
+   
+   The overall feature added is the ability to see the activity logs recorded in the database and filter through. More specifically, the software can now upload the data to a server. From here the software verifies log in information before being able to access the activity logs. Then, it is able to take in input and display information related only to what one would want to see. A calendar is also available on the side to be able to reference any holidays or special events that might have taken place.
 
