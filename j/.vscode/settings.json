@@ -14,7 +14,8 @@
             "c:\\Users\\anish\\Downloads\\httpcore5-testing-5.2.jar",
             "c:\\Users\\anish\\Downloads\\httpcore5-reactive-5.2.jar",
             "c:\\Users\\anish\\Downloads\\httpcore5-h2-5.2.jar",
-            "c:\\Users\\anish\\Downloads\\httpcore5-5.2.jar"
+            "c:\\Users\\anish\\Downloads\\httpcore5-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\org.apache.commons.httpclient.jar\\org.apache.commons.httpclient.jar"
         ],
         "exclude": [
             "apache-commons.jar/apache-commons.jar",

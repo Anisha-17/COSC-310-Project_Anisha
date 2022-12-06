@@ -1,5 +1,9 @@
-<%@ page language="java" import="java.io.*,java.sql.*"%>
+<%@ page language="java" import="java.io.*,java.sql.*, org.apache.hc.client5.http.fluent.*, org.apache.http.client.*"%>
+
 <%@ include file="jdbc.jsp" %>
+
+
+
 <%
 	String authenticatedUser = null;
 	session = request.getSession(true);
@@ -59,7 +63,7 @@
 
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpClient httpClient = new DefaultHttpClient();
-		HttpGet request - new HttpGet("https://api.myip.com");
+		HttpGet request = new HttpGet("https://api.myip.com");
 		try {
 			HttpResponse response = client.execute(request);
 			HttpEntity entity = response.getEntity();
@@ -68,14 +72,14 @@
 			String address = content.subString(7,18);
 
 			String add = "INSERT INTO ip VALUES ?, ? ;"
-			PreparedStatement pr = con.prepareStatement(add);
+			PreparedStatement pr = con.prepareStatement(add); */
 			pr.setString(1, username);
 			pr.setString(2, address);
-			p.execute();
+		p.execute(); }
 
 
 
-			}
+		
 			
 		
 		if(retStr != null)
