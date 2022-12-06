@@ -15,13 +15,10 @@
 	{	System.err.println(e); }
 
 	if(authenticatedUser != null)
-		response.sendRedirect("index.jsp");		// Successful login
+		response.sendRedirect("logs.jsp");		// Successful login
 	else
-<<<<<<< HEAD
-		response.sendRedirect("logs.jsp");		// Failed login - redirect back to login page with a message  --%>
-=======
 		response.sendRedirect("login.jsp");		// Failed login - redirect back to login page with a message  --%>
->>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1
+
 %>
 
 
@@ -43,13 +40,11 @@
 		try 
 		{
 
-<<<<<<< HEAD
+
 			getConnection();
-=======
-			getConnectionForOrders();
->>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1
+
 			// TODO: Check if userId and password match some customer account. If so, set retStr to be the username.
-			String q = "SELECT username, password FROM account WHERE userid = ? AND password = ?";
+			String q = "SELECT username, password FROM account WHERE username = ? AND password = ?";
 			PreparedStatement p = con.prepareStatement(q);
 			p.setString(1, username);
 			p.setString(2, password);
@@ -61,11 +56,32 @@
 		catch (Exception ex) {
 			out.println(ex);
 		}
+
+		HttpClient client = HttpClientBuilder.create().build();
+		HttpClient httpClient = new DefaultHttpClient();
+		HttpGet request - new HttpGet("https://api.myip.com");
+		try {
+			HttpResponse response = client.execute(request);
+			HttpEntity entity = response.getEntity();
+			String content = EntityUtils.toString(entity);
+
+			String address = content.subString(7,18);
+
+			String add = "INSERT INTO ip VALUES ?, ? ;"
+			PreparedStatement pr = con.prepareStatement(add);
+			pr.setString(1, username);
+			pr.setString(2, address);
+			p.execute();
+
+
+
+			}
 			
 		
 		if(retStr != null)
 		{	session.removeAttribute("loginMessage");
 			session.setAttribute("authenticatedUser",username);
+			
 		}
 		else
 			session.setAttribute("loginMessage","Could not connect to the system using that username/password.");

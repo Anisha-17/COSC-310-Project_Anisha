@@ -20,7 +20,7 @@ out.print("<h1>Connecting to database.</h1><br><br>");
 
 getConnection();
 
-String fileName = "/mycsvdata/WEB-INF/ddl/data.ddl";
+String fileName = "/mycsvdata/WEB-INF/ddl/loaddata2.ddl";
         
 
 
@@ -51,10 +51,6 @@ try
     scanner.close();
     
     out.print("<br><br><h1>Database loaded.</h1>");
-<<<<<<< HEAD
-
-=======
->>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1
 }
 catch (Exception e)
 {

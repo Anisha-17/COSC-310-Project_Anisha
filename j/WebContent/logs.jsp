@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,16 +11,11 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF8"%>
 
 
-
-
-
-
-
 <div style="float:left;">
         <h2>Role</h2>
             <form method="get" action="logs.jsp">
                 <input type="text" name="role" size="10">
-                
+                <input type="submit" value="Submit"><input type="reset" value="Reset"> 
             </form>
 </div>
 
@@ -30,7 +24,7 @@
         <h2>Door</h2>
             <form method="get" action="logs.jsp">
                 <input type="text" name="door" size="10">
-                
+                <input type="submit" value="Submit"><input type="reset" value="Reset"> 
             </form>
     </div>
 </div>
@@ -40,7 +34,7 @@
         <h2>Access Status</h2>
             <form method="get" action="logs.jsp">
                 <input type="text" name="accessStatus" size="10">
-                
+                <input type="submit" value="Submit"><input type="reset" value="Reset"> 
             </form>
     </div>
 </div>
@@ -60,7 +54,7 @@
 String role = request.getParameter("role");
 String door = request.getParameter("door");
 String accessStatus = request.getParameter("accessStatus");
-String date = "2022-11-14 20:19";
+String date = "date";
 		
 //Note: Forces loading of SQL Server driver
 try
@@ -83,8 +77,6 @@ try{
     "FROM data WHERE RoleName LIKE ?, DoorToAccess ?, AccessStatus LIKE ?, Date ?";
 	PreparedStatement p = con.prepareStatement(sql)	;
 	
-	ResultSet r = p.executeQuery();
-
     if(role == "null"){
         p.setString(1,"% ");
     } else {
@@ -106,10 +98,11 @@ try{
     if(date == null) {
         p.setString(4, "<> ANY (SELECT date FROM data) ");
     } else {
-        p.setString(4, "=" + date);
+        p.setString(4, "= " + date);
     }
 
-
+    ResultSet r = p.executeQuery();
+    
 	while(r.next()){
 		String role1 = r.getString("RoleName");
 		String door1 = r.getString("DoorToAccess");
@@ -134,10 +127,4 @@ try{
 %>
 </body>
 </html>
-=======
-<%@ page import="java.sql.*,java.net.URLEncoder" %>
-<%@ page import="java.text.NumberFormat" %>
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF8"%>
-<%@ include file="jdbc.jsp" %>
 
->>>>>>> 58f18b696a09873c362223a6b00fed8467a102f1

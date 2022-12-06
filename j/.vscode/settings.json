@@ -5,10 +5,20 @@
             "opencsv-5.7.1.jar",
             "c:\\Users\\anish\\OneDrive - UBC\\Documents\\2022W-Y3\\Term 1\\cosc 310\\commons-lang3-3.12.0.jar",
             "c:\\Users\\anish\\OneDrive - UBC\\Documents\\2022W-Y3\\Term 1\\cosc 310\\mysql-connector-j-8.0.31.jar",
-            "c:\\Users\\anish\\OneDrive - UBC\\Documents\\2022W-Y3\\Term 1\\cosc 304 labs\\lab 7\\304_lab7_starter_java\\WebContent\\WEB-INF\\lib\\mssql-jdbc-11.2.0.jre11.jar"
+            "c:\\Users\\anish\\OneDrive - UBC\\Documents\\2022W-Y3\\Term 1\\cosc 304 labs\\lab 7\\304_lab7_starter_java\\WebContent\\WEB-INF\\lib\\mssql-jdbc-11.2.0.jre11.jar",
+            "c:\\Users\\anish\\Downloads\\httpclient5-testing-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpclient5-win-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpclient5-cache-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpclient5-fluent-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpclient5-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpcore5-testing-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpcore5-reactive-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpcore5-h2-5.2.jar",
+            "c:\\Users\\anish\\Downloads\\httpcore5-5.2.jar"
         ],
         "exclude": [
-            "apache-commons.jar/apache-commons.jar"
+            "apache-commons.jar/apache-commons.jar",
+            "c:\\Users\\anish\\Downloads\\httpclient5-cache-5.2.jar"
         ]
     }
 }

@@ -8,10 +8,14 @@ CREATE TABLE data (
 )
 
 CREATE TABLE account (
-	username VARCHAR (15),
+	username VARCHAR (15) NOT NULL PRIMARY KEY,
 	password VARCHAR (15)
 )
 
+CREATE TABLE ip (
+	username VARCHAR (15) FOREIGN KEY REFERENCES account(username),
+	IP VARCHAR (15)
+)
 
 BULK INSERT data
 FROM '\mycsvdata\database.csv'
