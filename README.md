@@ -64,5 +64,11 @@ Regarding the Features added, you will need docker desktop to be running in the 
    
    # Features added
    
-   The overall feature added is the ability to see the activity logs recorded in the database and filter through. More specifically, the software can now upload the data to a server. From here the software verifies log in information before being able to access the activity logs. Then, it is able to take in input and display information related only to what one would want to see. A calendar is also available on the side to be able to reference any holidays or special events that might have taken place.
+   The overall feature added is the ability to see the activity logs recorded in the database and filter through. More specifically, the software can now upload the data to a server. From here the software verifies log in information before being able to access the activity logs. Then, it is able to take in input and display information related only to what one would want to see. 
+   With every log in attempt, whether successful or not, the users IP address and username used will be stored in a database. 
 
+  # APIs Used
+  
+  The added program is based based off of JDBC, which is a Java based API. It allows for creativing a connection between a Java program and a database and determines how one may access that database. Whether it be only adding values or only querying the database, it provides all the methods required to do so.
+  
+  The program also uses MY IP, which is an API that gets the users IP information by simply accessing the link. Which is called every login attempt. This gets stored to a database to keep track of who is accessing security logs from where.
